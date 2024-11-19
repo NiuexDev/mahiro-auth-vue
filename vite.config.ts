@@ -13,10 +13,13 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
-      '@a': fileURLToPath(new URL('./src/assets', import.meta.url)),
-      '@c': fileURLToPath(new URL('./src/components', import.meta.url)),
-      '@v': fileURLToPath(new URL('./src/views', import.meta.url)),
-      '@s': fileURLToPath(new URL('./src/stores', import.meta.url)),
+      '@assets': fileURLToPath(new URL('./src/assets', import.meta.url)),
+      '@components': fileURLToPath(new URL('./src/components', import.meta.url)),
+      '@views': fileURLToPath(new URL('./src/views', import.meta.url)),
+      '@stores': fileURLToPath(new URL('./src/stores', import.meta.url)),
+      '@services': fileURLToPath(new URL('./src/services', import.meta.url)),
+      '@utils': fileURLToPath(new URL('./src/utils', import.meta.url)),
+      '@types': fileURLToPath(new URL('./src/types', import.meta.url)),
     }
   }
 })

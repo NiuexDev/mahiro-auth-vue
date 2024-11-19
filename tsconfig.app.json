@@ -9,10 +9,13 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@a/*": ["./src/assets/*"],
-      "@c/*": ["./src/components/*"],
-      "@v/*": ["./src/views/*"],
-      "@s/*": ["./src/stores/*"]
+      "@assets/*": ["./src/assets/*"],
+      "@components/*": ["./src/components/*"],
+      "@views/*": ["./src/views/*"],
+      "@stores/*": ["./src/stores/*"],
+      "@services/*": ["./src/services/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@types/*": ["./src/types/*"]
     }
   }
 }

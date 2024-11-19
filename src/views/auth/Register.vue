@@ -18,10 +18,10 @@
         </n-form-item>
         
         <n-flex class="submit" :size="12">
-            <n-button type="primary" secondary round style="flex: 1">{{ $t('auth.login.submit') }}</n-button>
+            <n-button type="primary" secondary round style="flex: 1">{{ $t('auth.register.submit') }}</n-button>
         </n-flex>
 
-        <n-button text @click="toLoginPage()">{{ $t('auth.register.login') }}</n-button>
+        <n-button text @click="toLoginPage()">{{ $t('auth.login.title') }}</n-button>
     </n-form>
 </template>
 
@@ -30,9 +30,9 @@ import { NForm, NFormItem, NInput, NButton, NFlex, type FormRules } from 'naive-
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
-import verifyEMailRegExp from '@/public/EmailRegExp'
-import codeValidator from '@/public/CodeValidator'
-import passwordValidator from '@/public/PasswordValidator'
+import verifyEMailRegExp from './EmailRegExp'
+import codeValidator from './CodeValidator'
+import passwordValidator from './PasswordValidator'
 
 const { t } = useI18n()
 

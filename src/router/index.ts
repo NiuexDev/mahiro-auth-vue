@@ -5,11 +5,11 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      component: import("@v/HomeView.vue")
+      component: import("@views/HomeView.vue")
     },
     {
       path: "/auth",
-      component: () => import("@v/auth/Layout.vue"),
+      component: () => import("@views/auth/Layout.vue"),
       children: [
         {
           path: "",
@@ -17,21 +17,21 @@ const router = createRouter({
         },
         {
           path: "login",
-          component: () => import("@v/auth/Login.vue")
+          component: () => import("@views/auth/Login.vue")
         },
         {
           path: "register",
-          component: () => import("@v/auth/Register.vue")
+          component: () => import("@views/auth/Register.vue")
         }
       ]
     },
     {
       path: "/user",
-      component: () => import("@v/user/Layout.vue")
+      component: () => import("@views/user/Layout.vue")
     },
     {
       path: "/user/welcome",
-      component: () => import("@v/user/Welcome.vue")
+      component: () => import("@views/user/Welcome.vue")
     }
   ]
 })
